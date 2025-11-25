@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>       
+                    <a href="#section1">О проекте</a>
+                    <a href="#section2">Направления</a>
+                    <a href="#section3">Галерея</a>
+                    <a href="#section4">Планирование</a>
+                    <a href="#section5">Контакты</a>
+                         
+        </nav>
+    </header>
+
+   <main>
+
+        <div class="section1">
+            <h2 id="section1">О проекте</h2>
+            <p>Добро пожаловать на сайт "Путешествие по России". Здесь вы найдете информацию о самых интересных местах нашей страны.<br>
+            Россия-самая большая страна в мире.</p>
+            </div>
+
+         <div class="section2">
+            <h2 id="section2">Популярные направления</h2>
+            <h3>Топ 5 направлений:</h3>
+            <ol>
+                <li>Озеро Байкал</li>
+                <li>Камчатка</li>
+                <li>Золотое кольцо России</li>
+                <li>Алтай</li>
+                <li>Калининград</li>
+            </ol>
+            <h3>Сравнение направлений</h3>
+            <table>
+                <tr>
+                    <td>Наименование</td>
+                    <td>Лучшее время</td>
+                    <td>Стоимость</td>                    
+                </tr>
+                <tr>
+                    <td>Озеро Байкал</td>
+                    <td>Июль-август</td>
+                    <td>30 000 руб.</td>                    
+                </tr>
+                <tr>
+                    <td>Камчатка</td>
+                    <td>Июль-сентябрь</td>
+                    <td>70 000 руб.</td>                    
+                </tr>
+                <tr>
+                    <td>Золтое кольцо России</td>
+                    <td>Май-сентябрь</td>
+                    <td>20 000 руб.</td>                    
+                </tr>
+                <tr>
+                    <td>Алтай</td>
+                    <td>Июнь-август</td>
+                    <td>25 000 руб.</td>                    
+                </tr>
+            </table>
+         </div>
+
+        <div class="section3">
+            <h2 id="section3">Галерея</h2>
+
+             <h3>Озеро Байкал</h3>
+             <img src="1.jpg"width="150px">
+             <p>Озеро Байкал-самое глубокое озеро в мире</p>
+
+             <h3>Камчатка</h3>
+             <img src="2.jpg"width="150px">
+             <p>Камчатка - край вулканов</p>
+
+             <h3>Алтай</h3>
+             <img src="3.jpg"width="150px">
+             <p>Алтай-горный край</p>
+            <p>Больше фотографий вы можете найти на наших ресурсах</p><br>
+            <a href="https://yandex.ru/images/search?lr=51&source=serp&stype=image&text=озеро%20байкал%20фото">Фото Байкала</a><br>
+            <a href="https://yandex.ru/images/search?lr=51&text=камчатка%20фото">Фото Камчатки</a><br>
+            <a href="https://yandex.ru/images/search?lr=51&text=алтай%20фото">Фото Алтая</a><br>
+         </div>
+
+        <div class="section4">
+            <h2 id="section4">Планирование путешествия</h2>
+                <form action="#"method="POST">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="name"id="name" name="name" required placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email"id="email" name="email" required placeholder="example@gmail.com">
+                    </div>
+                    
+                    <label for="city">Выберите направление:</label>
+                    <select name="city" id="city">
+                        
+                        <option value="">Выберите направление</option>
+                        <option value="">Байкал</option>
+                        <option value="">Камчатка</option>
+                        <option value="">Алтай</option>
+                    </select>
+                   <p>Тип путешествия:</p>
+                   <p>Индивидуальное</p> 
+                   <input type="radio"id="Индивидуальное"name="тип"value="Индивидуальное"><br>
+                    <p>Групповое</p> 
+                   <input type="radio"id="Групповое"name="тип"value="Групповое"><br>
+
+                    <p>Дополнительные услуги:</p>
+                   <p>Гид</p> 
+                   <input type="radio"id="Гид"name="тип"value="Гид"><br>
+                    <p>Трансфер</p> 
+                   <input type="radio"id="Трансфер"name="тип"value="Трансфер"><br>
+                   <p>Страховка</p> 
+                   <input type="radio"id="Страховка"name="тип"value="Страховка"><br>
+
+                   <p>Комментарии и пожелания:</p>
+                   <textarea name="comments" rows="5"cols="100" placeholder="Напишите комментарий"></textarea><br>
+                  <input type="submit" value="Отправить">
+                  <input type="reset" value="Очистить форму"><br>
+                </form>
+         </div>
+
+ </main> 
+<footer>
+    <section5>
+    <h2 id="section5">Контакты</h2>
+    <p>Свяжитесь с нами для получения дополнительной информации:</p>
+    <ul>
+        <li>Телефон: +7929-000-00-00</li>
+        <li>email: example@gmail.com</li>
+        <li>Адрес: г.Москва, ул.Примерная, д.1
+    </ul>
+    <span id="text">2025 Мир Путешествий. Все права защищены.</span>
+    </section5>
+
+</footer>
+    
+</body>
+</html>
